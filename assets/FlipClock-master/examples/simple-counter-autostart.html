@@ -19,6 +19,16 @@
 					clockFace: 'Counter',
 					autoStart: true
 				});
+
+                // Attach a click event to a button a decrement the clock
+                $('.decrement').click(function() {
+                    clock.decrement();
+                });
+
+                $('.reset').click(function() {
+                    clock.reset();
+                });
+
 			});
 		</script>
 		

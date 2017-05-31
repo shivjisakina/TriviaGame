@@ -16,70 +16,81 @@ $( document ).ready(function() {
     var wrong = 0;
     var unanswered = 0;
     var answered = 0;
+    var timer = 0;
 
     var q1 = {
         question: "Did Ross deserve Rachel",
-        correct: "No",
-        incorrect: "Not at all",
-        incorrect1: "Yeah....lmao no",
-        incorrect2: "In what world?"
+        answer1: ["No", 1],
+        answer2: ["Not at all", 1],
+        answer3: ["Yeah....lmao no", 1],
+        answer4: ["In what world?", 1]
     };
     console.log(q1);
 
     var q2 = {
         question: "In 1995, the theme song reached number 1 in the Billboard Hot 100 Airplay chart for how long?.",
-        incorrect1: "2 weeks",
-        incorrect: "4 weeks",
-        correct: "8 weeks",
-        incorrect2: "5 weeks"
+        answer1: ["2 weeks", 0],
+        answer2: ["4 weeks", 0],
+        answer3: ["8 weeks", 1],
+        answer4: ["5 weeks", 0]
         };
         console.log(q2);
 
     var q3 = {
         question: "What was Phoebe's twin sisters name?",
-        incorrect: "Phobo",
-        correct: "Ursula",
-        incorrect1: "Erika",
-        incorrect2: "Ursa"
+        answer1: ["Phobo", 0],
+        answer2: ["Ursula", 1],
+        answer3: ["Erika", 0],
+        answer4: ["Ursa", 0]
         };
         console.log(q3);
 
     var q4 = {
         question: "What question did Monica and Rachel miss, which ended up in them losing their apartment?",
-        incorrect2: "According to Chandler, what phenomenon scares the bejesus out of him?",
-        incorrect: "Every week the TV Guide comes to Chandler and Joey's apartment. What name appears on the address label?",
-        incorrect1: "What is the name of Chandler's father's Las Vegas all-male burlesque?",
-        correct: "What is Chandler Bing's job?"
+        answer1: ["According to Chandler, what phenomenon scares the bejesus out of him?", 0],
+        answer2: ["Every week the TV Guide comes to Chandler and Joey's apartment. What name appears on the address label?", 0],
+        answer3: ["What is the name of Chandler's father's Las Vegas all-male burlesque?", 0],
+        answer4: ["What is Chandler Bing's job?", 1]
         };
         console.log(q4);
 
     var q5 = {
         question: "Who played Monica's character?",
-        incorrect2: "Jennifer Aniston",
-        incorrect: "Lisa Kudrow",
-        incorrect1: "Matthew Perry",
-        correct: "Courtney Cox"
+        answer1: ["Jennifer Aniston", 0],
+        answer2: ["Lisa Kudrow", 0],
+        answer3: ["Matthew Perry", 0],
+        answer4: ["Courtney Cox", 1]
         };
         console.log(q5);
 
     var q6 = {
         question: "What tv show was Phoebes doctor watching during her delivery?",
-        incorrect1: "Laverne & Shirley",
-        incorrect: "The Brady Bunch",
-        correct: "Happy Days",
-        incorrect2: "That '70s Show"
+        answer1: ["Laverne & Shirley", 0],
+        answer2: ["The Brady Bunch", 0],
+        answer3: ["Happy Days", 1],
+        answer4: ["That '70s Show", 0]
         };
         console.log(q6);
 
     var q7 = {
         question: "Joey found his twin in Las Vegas, but what kind of twin was it?",
-        correct: "Hand Twin",
-        incorrect: "Foot Twin",
-        incorrect1: "Voice Twin",
-        incorrect2: "Hair Twin"
+        answer1: ["Hand Twin", 0],
+        answer2: ["Foot Twin", 0],
+        answer3: ["Voice Twin", 0],
+        answer4: ["Hair Twin"]
         };
         console.log(q7);
 
+    // timer
 
+    var clock;
+
+
+     // Instantiate a counter
+     clock = new FlipClock($('.clock'), 12, {
+     clockFace: 'Counter',
+     autoStart: true,
+     countdown: true
+     });
 
 });
