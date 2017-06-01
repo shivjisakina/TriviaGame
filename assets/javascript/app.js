@@ -9,7 +9,8 @@
 // start onclick if answered and unanswered === 0
 
 // Document ready function
-$( document ).ready(function() {
+$(document).ready(function() {
+
     console.log( "ready!" );
 
     // Variables
@@ -19,7 +20,9 @@ $( document ).ready(function() {
     var unanswered = 0;
     var answered = 0;
     var timer = 0;
+    var startGame = 0;
 
+    $("#timer").hide();
 
     // Questions and answers
     var q1 = {
@@ -78,7 +81,7 @@ $( document ).ready(function() {
 
     var q7 = {
         question: "Joey found his twin in Las Vegas, but what kind of twin was it?",
-        answer1: ["Hand Twin", 0],
+        answer1: ["Hand Twin", 1],
         answer2: ["Foot Twin", 0],
         answer3: ["Voice Twin", 0],
         answer4: ["Hair Twin"]
@@ -91,31 +94,46 @@ $( document ).ready(function() {
 
 
      // Instantiate a counter
-     clock = new FlipClock($('.clock'), 30, {
-     clockFace: 'Counter',
-     autoStart: true,
-     countdown: true
+     clock = new FlipClock($('.clock'), 50, {
+         clockFace: 'Counter',
+         autoStart: true,
+         countdown: true
+
      });
 
 
-     // Hide and Show the start button
 
-    /*$("#startbtn").click(function(){
-     $("#timer").hide();
-     console.log("button clicked")
-     });
 
-     $("#startbtn").click(function(){
+    // Hide and Show the start button
+
+
+    /*$("#startbtn").on("click", function(){
+
      $("#timer").show();
      });*/
 
-    $("#startbtn").click (function () {
-
-
-
-        $(function () {
-            $('#timer').removeClass('hidden');
-        });
+    $(".startbtn").on("click", function(){
+        $("#timer").show();
+        $(".startbtn").hide();
     });
 
+
+
+
+    /*/!* $(function () {
+     $('#timer').removeClass('hide');
+
+
+     });*/
+
+
+
+
+
 });
+
+
+
+
+
+

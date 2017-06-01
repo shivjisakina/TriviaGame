@@ -15,8 +15,12 @@ h1 {
 }
 
 #timer {
-    margin: auto;
+
 }
 
 
-.hide { display: none; }
+
+.clock {
+    align-content: center;
+
+}
