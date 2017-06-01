@@ -1,12 +1,13 @@
-// Pseudo code -TEST ALL THE TIME
+// Pseudo code -(TEST ALL THE TIME)
 
 //Document ready
 //Name variables (answered, unanswered, correct, wrong)
 //on click Start button function
 // hide button
-// Objects with questions and answers
 // time function
 // start onclick if answered and unanswered === 0
+//push everything into HTML
+//Create the endgame screen
 
 // Document ready function
 $(document).ready(function() {
@@ -22,6 +23,7 @@ $(document).ready(function() {
     var timer = 0;
     var startGame = 0;
 
+    // Hide Timer
     $("#timer").hide();
 
     // Questions and answers
@@ -33,6 +35,13 @@ $(document).ready(function() {
         answer4: ["In what world?", 1]
     };
     console.log(q1);
+    console.log(q1.question);
+    console.log(q1.answer1[0]);
+    console.log(q1.answer2[0]);
+    console.log(q1.answer3[0]);
+    console.log(q1.answer4[0]);
+
+
 
     var q2 = {
         question: "In 1995, the theme song reached number 1 in the Billboard Hot 100 Airplay chart for how long?.",
@@ -42,6 +51,11 @@ $(document).ready(function() {
         answer4: ["5 weeks", 0]
         };
         console.log(q2);
+        console.log(q2.question);
+        console.log(q2.answer1[0]);
+        console.log(q2.answer2[0]);
+        console.log(q2.answer3[0]);
+        console.log(q2.answer4[0]);
 
     var q3 = {
         question: "What was Phoebe's twin sisters name?",
@@ -51,6 +65,11 @@ $(document).ready(function() {
         answer4: ["Ursa", 0]
         };
         console.log(q3);
+        console.log(q3.question);
+        console.log(q3.answer1[0]);
+        console.log(q3.answer2[0]);
+        console.log(q3.answer3[0]);
+        console.log(q3.answer4[0]);
 
     var q4 = {
         question: "What question did Monica and Rachel miss, which ended up in them losing their apartment?",
@@ -60,6 +79,11 @@ $(document).ready(function() {
         answer4: ["What is Chandler Bing's job?", 1]
         };
         console.log(q4);
+        console.log(q4.question);
+        console.log(q4.answer1[0]);
+        console.log(q4.answer2[0]);
+        console.log(q4.answer3[0]);
+        console.log(q4.answer4[0]);
 
     var q5 = {
         question: "Who played Monica's character?",
@@ -69,6 +93,11 @@ $(document).ready(function() {
         answer4: ["Courtney Cox", 1]
         };
         console.log(q5);
+        console.log(q5.question);
+        console.log(q5.answer1[0]);
+        console.log(q5.answer2[0]);
+        console.log(q5.answer3[0]);
+        console.log(q5.answer4[0]);
 
     var q6 = {
         question: "What tv show was Phoebes doctor watching during her delivery?",
@@ -78,6 +107,11 @@ $(document).ready(function() {
         answer4: ["That '70s Show", 0]
         };
         console.log(q6);
+        console.log(q6.question);
+        console.log(q6.answer1[0]);
+        console.log(q6.answer2[0]);
+        console.log(q6.answer3[0]);
+        console.log(q6.answer4[0]);
 
     var q7 = {
         question: "Joey found his twin in Las Vegas, but what kind of twin was it?",
@@ -87,14 +121,19 @@ $(document).ready(function() {
         answer4: ["Hair Twin"]
         };
         console.log(q7);
+        console.log(q7.question);
+        console.log(q7.answer1[0]);
+        console.log(q7.answer2[0]);
+        console.log(q7.answer3[0]);
+        console.log(q7.answer4[0]);
 
-    // Countdown timer
 
+    // Countdown timer variable
     var clock;
 
 
-     // Instantiate a counter
-     clock = new FlipClock($('.clock'), 50, {
+     // Added the countdown library and set the seconds
+     clock = new FlipClock($('.clock'), 55, {
          clockFace: 'Counter',
          autoStart: true,
          countdown: true
@@ -104,27 +143,15 @@ $(document).ready(function() {
 
 
 
-    // Hide and Show the start button
+    // Hide and Show the start button and timer
 
-
-    /*$("#startbtn").on("click", function(){
-
-     $("#timer").show();
-     });*/
 
     $(".startbtn").on("click", function(){
         $("#timer").show();
         $(".startbtn").hide();
     });
 
-
-
-
-    /*/!* $(function () {
-     $('#timer').removeClass('hide');
-
-
-     });*/
+    //
 
 
 
