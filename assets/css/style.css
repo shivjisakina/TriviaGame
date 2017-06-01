@@ -20,5 +20,8 @@ h1 {
 }
 
 .questions {
-    color: white;
+    color: black;
+    /*font-size:2px;
+    background-color: white;*/
+
 }
