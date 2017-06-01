@@ -151,7 +151,10 @@ $(document).ready(function() {
         $(".startbtn").hide();
     });
 
-    //
+    //Transfer the content to html
+
+    $(".questions").html("<h1>" + q1.question + q1.answer1[0] + q1.answer2[0] + q1.answer3[0] + q1.answer4[0] + " Question 1</h1>");
+
 
 
 
