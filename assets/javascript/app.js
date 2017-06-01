@@ -8,9 +8,11 @@
 // time function
 // start onclick if answered and unanswered === 0
 
+// Document ready function
 $( document ).ready(function() {
     console.log( "ready!" );
 
+    // Variables
     var place = answered + unanswered;
     var correct = 0;
     var wrong = 0;
@@ -18,6 +20,8 @@ $( document ).ready(function() {
     var answered = 0;
     var timer = 0;
 
+
+    // Questions and answers
     var q1 = {
         question: "Did Ross deserve Rachel",
         answer1: ["No", 1],
@@ -81,16 +85,37 @@ $( document ).ready(function() {
         };
         console.log(q7);
 
-    // timer
+    // Countdown timer
 
     var clock;
 
 
      // Instantiate a counter
-     clock = new FlipClock($('.clock'), 12, {
+     clock = new FlipClock($('.clock'), 30, {
      clockFace: 'Counter',
      autoStart: true,
      countdown: true
      });
+
+
+     // Hide and Show the start button
+
+    /*$("#startbtn").click(function(){
+     $("#timer").hide();
+     console.log("button clicked")
+     });
+
+     $("#startbtn").click(function(){
+     $("#timer").show();
+     });*/
+
+    $("#startbtn").click (function () {
+
+
+
+        $(function () {
+            $('#timer').removeClass('hidden');
+        });
+    });
 
 });
