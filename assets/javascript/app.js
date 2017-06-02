@@ -5,11 +5,11 @@
 //On click Start button function
 //Hide button
 //Time function
-//Start onclick if answered and unanswered === 0
 //Push everything into HTML
 //Create radio buttons so the user is limited to one option
 //Take information from button clicks to see how many are correct/incorrect/unanswered
 //Create the endgame screen
+
 
 // Document ready function
 $(document).ready(function() {
