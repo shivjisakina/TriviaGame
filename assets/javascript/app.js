@@ -16,7 +16,8 @@ $(document).ready(function() {
 
     console.log( "ready!" );
 
-    // Variables
+//----------------------------Variables---------------------------------------------------------------------------------
+
     var place = answered + unanswered;
     var correct = 0;
     var wrong = 0;
@@ -25,9 +26,7 @@ $(document).ready(function() {
     var timer = 0;
     var startGame = 0;
 
-    // Hide Timer
-    $("#timer").hide();
-
+//------------------------All of the Question & Answer variables/objects------------------------------------------------
 
     // Questions and answers
     var q1 = {
@@ -128,12 +127,17 @@ $(document).ready(function() {
         console.log(q7.answer3[0]);
         console.log(q7.answer4[0]);
 
+//--------------------------Everything to do with the Timer-------------------------------------------------------------
+
+    // Hide Timer
+    $("#timer").hide();
+
 
     // Countdown timer variable
     var clock;
 
 
-     // Added the countdown library and set the seconds
+     // Added the countdown library and set the seconds (took this from http://flipclockjs.com/)
      clock = new FlipClock($('.clock'), 200, {
          clockFace: 'Counter',
          autoStart: true,
@@ -143,8 +147,6 @@ $(document).ready(function() {
 
 
     // Hide and Show the start button and timer
-
-
     $(".startbtn").on("click", function(startbtn){
         $("#timer").show();
         $(".startbtn").hide();
@@ -154,6 +156,8 @@ $(document).ready(function() {
     clock.start(function() {
         startbtn();
     });
+
+//---------------------------------------------------------------------------------------------------------------------
 
     //Transfer the content to html
 
