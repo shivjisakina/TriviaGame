@@ -233,12 +233,7 @@ $(document).ready(function() {
 
 
 //----------------------------------------------------------------------------------------------------------------------
-
-    // tried looking at documentation on the clock but I couldnt find anything that showed what happens when the value = 0
-    /*if (timer === 0) {
-        alert("Game over!!")
-    }*/
-
+    
     // reset function not working
 
     /*$(".reset").click(function(){
