@@ -36,12 +36,12 @@ $(document).ready(function() {
         answer3: ["Yeah....lmao no", 1],
         answer4: ["In what world?", 1]
     };
-    console.log(q1);
-    console.log(q1.question);
-    console.log(q1.answer1[0]);
-    console.log(q1.answer2[0]);
-    console.log(q1.answer3[0]);
-    console.log(q1.answer4[0]);
+        console.log(q1);
+        console.log(q1.question);
+        console.log(q1.answer1[0]);
+        console.log(q1.answer2[0]);
+        console.log(q1.answer3[0]);
+        console.log(q1.answer4[0]);
 
     var q2 = {
         question: "In 1995, the theme song reached number 1 in the Billboard Hot 100 Airplay chart for how long?.",
@@ -128,6 +128,7 @@ $(document).ready(function() {
         console.log(q7.answer3[0]);
         console.log(q7.answer4[0]);
 
+
 //----------Everything to do with the Timer-----------------------------------------------------------------------------
 
     // Hide Timer
@@ -160,13 +161,11 @@ $(document).ready(function() {
 
 //----------Transfer Content to HTML------------------------------------------------------------------------------------
 
-    /*var output = [];
-
-    for(var i=0; i<questions.length; i++){*/
+    // var output = [];
 
 
-    /* This is a M E S S
-    $(".q1").html("<h1> Question 1" + q1.question + q1.answer1[0] + q1.answer2[0] + q1.answer3[0] + q1.answer4[0] + "</h1>");
+    // This is a M E S S
+    /*$(".q1").html("<h1> Question 1" + q1.question + q1.answer1[0] + q1.answer2[0] + q1.answer3[0] + q1.answer4[0] + "</h1>");
     $(".q2").html("<h1> Question 1" + q2.question + q2.answer1[0] + q2.answer2[0] + q2.answer3[0] + q2.answer4[0] + "</h1>");
     $(".q3").html("<h1> Question 2" + q3.question + q3.answer1[0] + q3.answer2[0] + q3.answer3[0] + q3.answer4[0] + "</h1>");
     $(".q4").html("<h1> Question 3" + q4.question + q4.answer1[0] + q4.answer2[0] + q4.answer3[0] + q4.answer4[0] + "</h1>");
@@ -175,9 +174,66 @@ $(document).ready(function() {
     $(".q7").html("<h1> Question 6" + q7.question + q7.answer1[0] + q7.answer2[0] + q7.answer3[0] + q7.answer4[0] + "</h1>");*/
 
 
+    // Trying and failing at using for loops
+    /*for(var i = 0; i < q1.length; i++){
+     printThis += "<br>" + q1[0][0] + "<br>" + "<br>" +
+     ('<label><input type="radio" name="choices" value="' + choices[i] + '" /> ' + choices[i] + '</label>') + "<br>";
+
+     }*/
+
+
+    //Inspiration source: (https://simplestepscode.com/javascript-quiz-tutorial/#step2)
+
+    /*var questions = [
+     {
+     question: "What tv show was Phoebes doctor watching during her delivery?",
+     answers: {
+     a: "Laverne & Shirley",
+     b: "The Brady Bunch",
+     c: "Happy Days",
+     d: "That '70s Show" }
+     },
+     correctAnswer: 'c'
+     },
+     {
+     question: "Joey found his twin in Las Vegas, but what kind of twin was it?",
+     answers: {
+     a: "Hand Twin",
+     b: "Foot Twin",
+     c: "Voice Twin",
+     d: "Hair Twin"
+     },
+     correctAnswer: 'a'
+     },
+
+     ];
+
+     for(var i=0; i<questions.length; i++){
+
+     answers = [];
+
+     for(letter in questions[i].answers){
+     answers.push(
+     '<label>'
+     + '<input type="radio" name="question'+i+'" value="'+letter+'">'
+     + letter + ': '
+     + questions[i].answers[letter]
+     + '</label>'
+     );
+     }
+     output.push(
+     '<div class="question">' + questions[i].question + '</div>'
+     + '<div class="answers">' + answers.join('') + '</div>'
+     );
+     }
+
+     quizContainer.innerHTML = output.join('');
+     }*/
+
+
 //----------------------------------------------------------------------------------------------------------------------
 
-    // reset function
+    // reset function not working
 
     /*$(".reset").click(function(){
         location.reload();*/
