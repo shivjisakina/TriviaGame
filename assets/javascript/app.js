@@ -134,6 +134,9 @@ $(document).ready(function() {
     // Hide Timer
     $("#timer").hide();
 
+    //Hide Submit Button
+    $("#submitbtn").hide();
+
 
     // Countdown timer variable
     var clock;
@@ -152,7 +155,9 @@ $(document).ready(function() {
     $(".startbtn").on("click", function(startbtn){
         $("#timer").show();
         $(".startbtn").hide();
+        $("#submitbtn").show();
         $('#htmlquestions').removeClass('htmlquestions');
+        $("")
     });
 
     // Start clock AFTER start button is pushed
@@ -166,6 +171,8 @@ $(document).ready(function() {
 
 
     // This is a M E S S
+
+    $('#q1').append('<input type="radio"' + q1.question + '>', '<input type="radio"' + q2.question + '>', '<input type="radio"' + q3.question + '>', '<input type="radio"' + q4.question + '>')
     /*$(".q1").html("<h1> Question 1" + q1.question + q1.answer1[0] + q1.answer2[0] + q1.answer3[0] + q1.answer4[0] + "</h1>");
     $(".q2").html("<h1> Question 1" + q2.question + q2.answer1[0] + q2.answer2[0] + q2.answer3[0] + q2.answer4[0] + "</h1>");
     $(".q3").html("<h1> Question 2" + q3.question + q3.answer1[0] + q3.answer2[0] + q3.answer3[0] + q3.answer4[0] + "</h1>");
@@ -233,7 +240,7 @@ $(document).ready(function() {
 
 
 //----------------------------------------------------------------------------------------------------------------------
-    
+
     // reset function not working
 
     /*$(".reset").click(function(){
