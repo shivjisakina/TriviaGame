@@ -1,8 +1,8 @@
 # Friendly Trivia
 
-### Welcome to my trivia game!!
+## Welcome to my trivia game!!
 
-###This was a project for week 3 of the UCF Coding Bootcamp.
+##This was a project for week 3 of the UCF Coding Bootcamp.
 
 Technologies used:
 * HTML
@@ -11,7 +11,7 @@ Technologies used:
 * jQuery
 
 
-###How to Play
+##How to Play
 
 * You will have a total of 140 seconds to answer 7 questions
 
