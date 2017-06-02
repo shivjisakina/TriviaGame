@@ -152,6 +152,7 @@ $(document).ready(function() {
     $(".startbtn").on("click", function(startbtn){
         $("#timer").show();
         $(".startbtn").hide();
+        $('#htmlquestions').removeClass('htmlquestions');
     });
 
     // Start clock AFTER start button is pushed
