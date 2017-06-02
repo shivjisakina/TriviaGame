@@ -137,8 +137,8 @@ $(document).ready(function() {
     var clock;
 
 
-     // Added the countdown library and set the seconds (took this from http://flipclockjs.com/)
-     clock = new FlipClock($('.clock'), 200, {
+     // Added the countdown library and set the seconds to 140 (took this from http://flipclockjs.com/)
+     clock = new FlipClock($('.clock'), 140, {
          clockFace: 'Counter',
          autoStart: true,
          countdown: true
@@ -161,13 +161,13 @@ $(document).ready(function() {
 
     //Transfer the content to html
 
-    /*$(".q1").html("<h1> Question 1" + q1.question + q1.answer1[0] + q1.answer2[0] + q1.answer3[0] + q1.answer4[0] + "</h1>");
+    $(".q1").html("<h1> Question 1" + q1.question + q1.answer1[0] + q1.answer2[0] + q1.answer3[0] + q1.answer4[0] + "</h1>");
     $(".q2").html("<h1> Question 1" + q2.question + q2.answer1[0] + q2.answer2[0] + q2.answer3[0] + q2.answer4[0] + "</h1>");
     $(".q3").html("<h1> Question 2" + q3.question + q3.answer1[0] + q3.answer2[0] + q3.answer3[0] + q3.answer4[0] + "</h1>");
     $(".q4").html("<h1> Question 3" + q4.question + q4.answer1[0] + q4.answer2[0] + q4.answer3[0] + q4.answer4[0] + "</h1>");
     $(".q5").html("<h1> Question 4" + q5.question + q5.answer1[0] + q5.answer2[0] + q5.answer3[0] + q5.answer4[0] + "</h1>");
     $(".q6").html("<h1> Question 5" + q6.question + q6.answer1[0] + q6.answer2[0] + q6.answer3[0] + q6.answer4[0] + "</h1>");
-    $(".q7").html("<h1> Question 6" + q7.question + q7.answer1[0] + q7.answer2[0] + q7.answer3[0] + q7.answer4[0] + "</h1>");*/
+    $(".q7").html("<h1> Question 6" + q7.question + q7.answer1[0] + q7.answer2[0] + q7.answer3[0] + q7.answer4[0] + "</h1>");
 
 
 
