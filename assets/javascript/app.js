@@ -16,7 +16,7 @@ $(document).ready(function() {
 
     console.log( "ready!" );
 
-//----------------------------Variables---------------------------------------------------------------------------------
+//-----------Variables--------------------------------------------------------------------------------------------------
 
     var place = answered + unanswered;
     var correct = 0;
@@ -26,9 +26,9 @@ $(document).ready(function() {
     var timer = 0;
     var startGame = 0;
 
-//------------------------All of the Question & Answer variables/objects------------------------------------------------
+//----------All of the Question & Answer variables/objects--------------------------------------------------------------
 
-    // Questions and answers
+
     var q1 = {
         question: "Did Ross deserve Rachel",
         answer1: ["No", 1],
@@ -50,6 +50,7 @@ $(document).ready(function() {
         answer3: ["8 weeks", 1],
         answer4: ["5 weeks", 0]
         };
+        //I console logged everything to make sure I was calling them out properly
         console.log(q2);
         console.log(q2.question);
         console.log(q2.answer1[0]);
@@ -127,7 +128,7 @@ $(document).ready(function() {
         console.log(q7.answer3[0]);
         console.log(q7.answer4[0]);
 
-//--------------------------Everything to do with the Timer-------------------------------------------------------------
+//----------Everything to do with the Timer-----------------------------------------------------------------------------
 
     // Hide Timer
     $("#timer").hide();
@@ -157,20 +158,24 @@ $(document).ready(function() {
         startbtn();
     });
 
-//---------------------------------------------------------------------------------------------------------------------
+//----------Transfer Content to HTML------------------------------------------------------------------------------------
 
-    //Transfer the content to html
+    /*var output = [];
 
+    for(var i=0; i<questions.length; i++){*/
+
+
+    /* This is a M E S S
     $(".q1").html("<h1> Question 1" + q1.question + q1.answer1[0] + q1.answer2[0] + q1.answer3[0] + q1.answer4[0] + "</h1>");
     $(".q2").html("<h1> Question 1" + q2.question + q2.answer1[0] + q2.answer2[0] + q2.answer3[0] + q2.answer4[0] + "</h1>");
     $(".q3").html("<h1> Question 2" + q3.question + q3.answer1[0] + q3.answer2[0] + q3.answer3[0] + q3.answer4[0] + "</h1>");
     $(".q4").html("<h1> Question 3" + q4.question + q4.answer1[0] + q4.answer2[0] + q4.answer3[0] + q4.answer4[0] + "</h1>");
     $(".q5").html("<h1> Question 4" + q5.question + q5.answer1[0] + q5.answer2[0] + q5.answer3[0] + q5.answer4[0] + "</h1>");
     $(".q6").html("<h1> Question 5" + q6.question + q6.answer1[0] + q6.answer2[0] + q6.answer3[0] + q6.answer4[0] + "</h1>");
-    $(".q7").html("<h1> Question 6" + q7.question + q7.answer1[0] + q7.answer2[0] + q7.answer3[0] + q7.answer4[0] + "</h1>");
+    $(".q7").html("<h1> Question 6" + q7.question + q7.answer1[0] + q7.answer2[0] + q7.answer3[0] + q7.answer4[0] + "</h1>");*/
 
 
-
+//----------------------------------------------------------------------------------------------------------------------
 
     // reset function
 
