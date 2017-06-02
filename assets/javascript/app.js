@@ -2,11 +2,13 @@
 
 //Document ready
 //Name variables (answered, unanswered, correct, wrong)
-//on click Start button function
-// hide button
-// time function
-// start onclick if answered and unanswered === 0
-//push everything into HTML
+//On click Start button function
+//Hide button
+//Time function
+//Start onclick if answered and unanswered === 0
+//Push everything into HTML
+//Create radio buttons so the user is limited to one option
+//Take information from button clicks to see how many are correct/incorrect/unanswered
 //Create the endgame screen
 
 // Document ready function
@@ -25,7 +27,7 @@ $(document).ready(function() {
 
     // Hide Timer
     $("#timer").hide();
-    $(".questions").hide();
+
 
     // Questions and answers
     var q1 = {
@@ -41,8 +43,6 @@ $(document).ready(function() {
     console.log(q1.answer2[0]);
     console.log(q1.answer3[0]);
     console.log(q1.answer4[0]);
-
-
 
     var q2 = {
         question: "In 1995, the theme song reached number 1 in the Billboard Hot 100 Airplay chart for how long?.",
@@ -134,7 +134,7 @@ $(document).ready(function() {
 
 
      // Added the countdown library and set the seconds
-     clock = new FlipClock($('.clock'), 55, {
+     clock = new FlipClock($('.clock'), 200, {
          clockFace: 'Counter',
          autoStart: true,
          countdown: true
@@ -142,29 +142,36 @@ $(document).ready(function() {
      });
 
 
-
-
     // Hide and Show the start button and timer
 
 
-    $(".startbtn").on("click", function(){
+    $(".startbtn").on("click", function(startbtn){
         $("#timer").show();
         $(".startbtn").hide();
     });
 
+    // Start clock AFTER start button is pushed
+    clock.start(function() {
+        startbtn();
+    });
+
     //Transfer the content to html
 
-    $(".q1").html("<h1> Question 1" + q1.question + q1.answer1[0] + q1.answer2[0] + q1.answer3[0] + q1.answer4[0] + "</h1>");
+    /*$(".q1").html("<h1> Question 1" + q1.question + q1.answer1[0] + q1.answer2[0] + q1.answer3[0] + q1.answer4[0] + "</h1>");
     $(".q2").html("<h1> Question 1" + q2.question + q2.answer1[0] + q2.answer2[0] + q2.answer3[0] + q2.answer4[0] + "</h1>");
     $(".q3").html("<h1> Question 2" + q3.question + q3.answer1[0] + q3.answer2[0] + q3.answer3[0] + q3.answer4[0] + "</h1>");
     $(".q4").html("<h1> Question 3" + q4.question + q4.answer1[0] + q4.answer2[0] + q4.answer3[0] + q4.answer4[0] + "</h1>");
     $(".q5").html("<h1> Question 4" + q5.question + q5.answer1[0] + q5.answer2[0] + q5.answer3[0] + q5.answer4[0] + "</h1>");
     $(".q6").html("<h1> Question 5" + q6.question + q6.answer1[0] + q6.answer2[0] + q6.answer3[0] + q6.answer4[0] + "</h1>");
-    $(".q7").html("<h1> Question 6" + q7.question + q7.answer1[0] + q7.answer2[0] + q7.answer3[0] + q7.answer4[0] + "</h1>");
+    $(".q7").html("<h1> Question 6" + q7.question + q7.answer1[0] + q7.answer2[0] + q7.answer3[0] + q7.answer4[0] + "</h1>");*/
 
 
 
 
+    // reset function
+
+    /*$(".reset").click(function(){
+        location.reload();*/
 
 
 

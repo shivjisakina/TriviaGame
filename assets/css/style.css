@@ -1,27 +1,34 @@
+/*This adds the background image and makes it cover the whole page without repeating*/
 body {
     background-image: url(../images/background.png);
     background-size: cover;
 }
 
+/*I wanted my start button to be bigger and center it lower in the page*/
 button {
     width: 200px;
     height: 75px;
     margin-top: 200px;
 }
 
+/*Increase h1 font size*/
 h1 {
     font-size: 70px;
 
 }
 
+/*This isnt doing anything to the clock??*/
 .clock {
     align-content: center;
 
 }
 
+/*The color is the only element that changes???*/
 .questions {
     color: black;
-    /*font-size:2px;
-    background-color: white;*/
-
+    font-size: 2px;
+    background-color: white;
+    display: list-item;
 }
+
+
