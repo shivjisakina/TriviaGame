@@ -17,6 +17,4 @@ Technologies used:
 
 * Get all of them correct or rewatch all 10 seasons of Friends again
 
-Does that sound simple enough? Give it a try here:
 
-https://shivjisakina.github.io/TriviaGame/
